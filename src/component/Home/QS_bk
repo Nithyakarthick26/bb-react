@@ -1,0 +1,498 @@
+import React, { Component } from 'react';
+import './QuickSearch.css';
+
+const qurl="https://bb-api-code.herokuapp.com/products"
+
+class QuickSearch extends Component {
+    render() {
+        return (
+
+            <section id="product">
+                <div className="'container m-5">
+                    <h1 className="text-center my-5">My smart basket</h1>
+                    <h3 className="text-center my-5">Fruits and Vegetables</h3>
+                    <div className="row">
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card ">
+                                <img src="fresh vege.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="fruitsvegetables.html">Fresh Vegetables</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="freshfruits.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="freshfruits.html">Fresh Fruits</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="cuts.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="cutsandsprouts.html">Cuts and Sprouts</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="exotic.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="exoticfruitsandveggies.html">Exotic Fruits and Veggies</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="pooja.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="poojaflowers.html">Pooja Flowers</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="herbs1.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="herbsandseasoning.html">Herbs and Seasonings</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3 className="text-center my-5">Your Daily Staples</h3>
+                    <div className="row">
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card ">
+                                <img src="oil.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="blendedcookingoils.html">Blended Cooking Oils</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="ricebranoils.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="ricebranoils.html">Rice Bran Oils</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="cooking paste.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="cookingpaste.html">Cooking Paste</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="herbs and seasoning.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="herbsandseasoningpowders.html">Herbs and Seasoning Powders</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="powder spices.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="powderspices.html">Powder Spices</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="blended masala.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="blendedmasala.html">Blended Masala</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3 className="text-center my-5">Beverages</h3>
+                    <div className="row">
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card b ">
+                                <img src="soft drinks.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="softdrinks.html">Soft Drinks</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card b">
+                                <img src="coconut water.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="coconutwater.html">Coconut Water</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card b">
+                                <img src="energy drinks.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="energydrinks.html">Energy Drinks</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card b">
+                                <img src="syrups.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="syrupsandconcentrates.html">Syrups and Concentrates</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card b">
+                                <img src="juices.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="juices.html">Juices</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h3 className="text-center my-5">Snacks Store</h3>
+                    <div className="row">
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card s">
+                                <img src="biscuits.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="biscuits.html">Biscuits and Cookies</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card s">
+                                <img src="namkeens.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="namkeens.html">Namkeens, Chips and Nachos</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card s">
+                                <img src="frozen snacks.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="frozensnacks.html">Frozen Snacks</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card s">
+                                <img src="soups.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="soups.html">Soups, Noodles and Pasta</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 className="text-center my-5">Cleaning and Household</h3>
+                    <div className="row">
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card c">
+                                <img src="clean.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="cleaners.html">Cleaners and Disinfectants</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card c">
+                                <img src="fabric.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="detergents.html">Detergents and Fabric Care</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card c">
+                                <img src="scrubs.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="kitchenwipes.html">Kitchen Wipes and Utensil Scrubs</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="card c">
+                                <img src="freshener.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="fresheners.html">Fresheners and Repellants</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <h3 className="text-center my-5">Beauty and Hygiene</h3>
+                    <div className="row">
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card beauty ">
+                                <img src="lips.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="lips.html">Lips</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card beauty">
+                                <img src="deos.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="deos.html">Deos</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card beauty">
+                                <img src="serum.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="serums.html">Serums and Moisturisers</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card beauty">
+                                <img src="cream.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="bb.html">BB, CC Creams</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card beauty">
+                                <img src="eye.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="eyemakeup.html">Eye Makeup</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h3 className="text-center my-5">Home and Kitchen</h3>
+                    <div className="row">
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card ">
+                                <img src="under150.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center ">
+                                    <h5 className="card-title"><a href="under.html" >Under Rs.150</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="under.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="below.html">Rs.150-Rs.300</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="notes.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="notebooks.html">Notebooks, Files and Folders</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="mugs.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="buckets.html">Buckets and Mugs</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="tawa.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="tawa.html">Tawa, Kadai and Pans</a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-2 col-md-6 mb-2">
+                            <div className="card">
+                                <img src="cups.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title"><a href="cups.html">Cups, Mugs  Tumblers</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel">
+    <div className="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 0"></button>
+
+    </div>
+
+    <div className="container border-2px solid gray carousel-inner justify-content col-lg-6 col-md-6 col-12">
+      <div className="carousel-item active">
+        <img src="images/new1.jpg" className="d-block w-100" alt="..."/>
+      </div>
+
+      <div className="carousel-item w-100 col-lg-6 col-md-6 col-12">
+        <img src="images/new2.jpg" className="d-block " alt="..."/>
+      </div>
+
+
+      <div className="carousel-item col-lg-6 col-md-6 col-12 ">
+
+        <img src="images/new3.jpg" className="d-block " alt="..."/>
+      </div>
+
+      <div className="carousel-item col-lg-6 col-md-6 col-12 ">
+        <img src="images/new4.jpg" className="d-block " alt="..."/>
+      </div>
+    </div>
+    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </button>
+    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </button>
+ 
+    <div id="product">
+      <div className="'container m-5">
+        <h3 className="text-center my-5">Bank Offers</h3>
+        <div className="row">
+          <div className="col-lg-3 col-md-3 col-12">
+            <div className="card bank ">
+              <img src="bank1.jpg" className="card-img-top" alt="..."/>
+              <div className="card-body text-center ">
+                
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-3 col-12">
+            <div className="card bank ">
+              <img src="bank2.jpg" className="card-img-top" alt="..."/>
+              <div className="card-body text-center">
+                
+
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-3 col-12">
+            <div className="card bank ">
+              <img src="bank3.jpg" className="card-img-top" alt="..."/>
+              <div className="card-body text-center">
+                
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-3 col-12">
+            <div className="card bank">
+              <img src="bank4.jpg" className="card-img-top" alt="..."/>
+              <div className="card-body text-center">
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+                </div>
+sssssss
+                <section id="contact">
+                    <div className="container box">
+                        <div className="row">
+                            <div className="col-lg-6 mb-4 h-100">
+                                <img src="logo1.jpg" className="img-fluid img" alt=".." />
+                            </div>
+                            <div className="col-lg-6 mb-4 h-100">
+                                <h4>CONTACT US</h4>
+                                <form>
+                                    <input type="text" className="form-control" placeholder=" Enter your name"/>
+                                    <input type="Email" className="form-control" placeholder=" Enter your mail id"/>
+                                    <textarea className="form-control" placeholder="Enter your message"></textarea>
+                                    <button className="btn btn-primary"> Send Message</button>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+        )
+    }
+}
+
+export default QuickSearch;
